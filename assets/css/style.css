@@ -19,8 +19,11 @@ body {
     font-weight: 600;
     text-decoration: none;
     text-transform: uppercase;
-    box-shadow: 0px 0px 2px #ccc; 
+    box-shadow: 0px 0px 2px #bbb; 
+}
 
+.button:hover {
+    opacity: 0.8;
 }
 
 .button span {
@@ -30,6 +33,7 @@ body {
 header {
     display: flex;
     justify-content: space-between;
+    color: #111111;
     padding-block: 30px;
     padding-inline: 100px;
     position: fixed;
@@ -45,14 +49,15 @@ header .logo {
 
 header .menu {
     display: flex;
+    width: 30px;
+    height: 30px;
     flex-direction: column;
     justify-content: space-between;
 }
 
 header .menu-line {
-    width: 30px;
     height: 3px;
-    background-color: black;
+    background-color: #222;
     border-radius: 3px;
 }
 
@@ -86,15 +91,17 @@ header .menu-line {
     line-height: 1.1;
     margin-top: 8px;
     margin-bottom: 25px;
+    color:#222;
+
 }
 
-.button.btn1 {
+.button.dark {
     background-color: #3b576d;
     color: #fff;
     font-size: 12px;
 }
 
-.button.btn2 {
+.button.light {
     font-weight: bold;
 }
 
@@ -103,7 +110,7 @@ header .menu-line {
     background-color: #3b576d;
     /*background-color: #797c7e;*/
     background-image: url(../images/man.png);
-    background-size: 100% auto;
+    background-size: cover;
     background-position: center top;
 }
 
@@ -121,4 +128,110 @@ footer {
 footer a {
     text-decoration: none;
     color: #3b576d;
+}
+
+
+
+/*-------------------- CSS Responsivity ------------------*/
+
+
+@media (max-width: 1024px) {
+    header,  
+    .container .leftside,
+    .container .rightside,
+    footer {
+        padding-inline: 40px;
+    }
+
+    header .menu {
+        height: 30px;
+    }
+
+    .button {
+        padding: 15px 20px;
+    }
+}
+
+
+@media (max-width: 920px) {
+    header {
+        position: initial;
+        background-color:#222;
+        color: #fff;
+        padding-block: 20px;
+    }
+
+    header,  
+    .container .leftside,
+    .container .rightside,
+    footer {
+        padding-inline: 20px;
+    }
+
+    header .menu-line {
+        background-color: #fff;
+    }
+
+    .button {
+        display: flex;
+        width: calc(100vw - 40px);
+        justify-content: center;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .container .leftside {
+        flex: none;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .container .leftside-info {
+        display: flex;
+        flex-direction: column;
+        width: calc(100vw - 40px);
+        align-items: center;
+    }
+
+    .leftside .subheading {
+        font-size: 13px;
+    }
+
+    .leftside h1 {
+        font-size: 30px;
+    }
+
+    footer {
+        background-color:#f0f0f0;
+        padding-block: 20px;
+    }
+}
+
+
+@media (max-width: 475px) {
+    header .logo {
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    header .menu {
+        width: 20px;
+        height: 20px;
+        margin-top: 8px;
+    }
+}
+
+
+@media (max-width: 325px) {
+    .leftside .subheading {
+        font-size: 12px;
+    }
+
+    .leftside h1 {
+        font-size: 28px;
+    }
 }
