@@ -57,7 +57,7 @@ header .menu {
 
 header .menu-line {
     height: 3px;
-    background-color: #222;
+    background-color: #111111;
     border-radius: 3px;
 }
 
@@ -121,7 +121,7 @@ footer {
     bottom: 0;
     padding-block: 40px;
     padding-inline: 100px;
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.52);
     font-size: 14px;
 }
 
@@ -140,7 +140,7 @@ footer a {
     .container .leftside,
     .container .rightside,
     footer {
-        padding-inline: 40px;
+        padding-inline: 60px;
     }
 
     header .menu {
@@ -173,9 +173,8 @@ footer a {
     }
 
     .button {
-        display: flex;
+        display: block;
         width: calc(100vw - 40px);
-        justify-content: center;
     }
 
     .container {
