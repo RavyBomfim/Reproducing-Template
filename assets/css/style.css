@@ -180,14 +180,13 @@ footer a {
 
     .container {
         flex-direction: column;
+        height:  calc(100vh - 86px);
     }
 
     .container .leftside {
         flex: none;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding-block: 20px;
         justify-content: center;
-        align-items: flex-start;
     }
 
     .container .leftside-info {
@@ -208,6 +207,7 @@ footer a {
     footer {
         background-color:#f0f0f0;
         padding-block: 20px;
+        text-align: center;
     }
 }
 
@@ -222,6 +222,11 @@ footer a {
         width: 20px;
         height: 20px;
         margin-top: 8px;
+    }
+
+    .container {
+        flex-direction: column;
+        height:  calc(100vh - 76px);
     }
 }
 
