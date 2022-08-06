@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Open+Sans:ital@0;1&family=Oswald:wght@400;700&family=Poppins:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+.button {
+    display: inline-block;
+    padding: 20px 30px;
+    background-color: #fff;
+    color: #000;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    box-shadow: 0px 0px 2px #ccc; 
+
+}
+
+.button span {
+    margin-left: 12px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-block: 30px;
+    padding-inline: 100px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+header .logo {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+header .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header .menu-line {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    border-radius: 3px;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.container .leftside, 
+.container .rightside {
+    padding-inline: 100px;
+}
+
+.container .leftside {
+    flex: 1;
+    background-color:#f0f0f0;
+    display: flex;
+    align-items: center;
+    
+}
+
+.leftside .subheading {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #3b576d;
+    font-size: 17px;
+}
+
+.leftside h1 {
+    font-size: 85px;
+    line-height: 1.1;
+    margin-top: 8px;
+    margin-bottom: 25px;
+}
+
+.button.btn1 {
+    background-color: #3b576d;
+    color: #fff;
+    font-size: 12px;
+}
+
+.button.btn2 {
+    font-weight: bold;
+}
+
+.container .rightside {
+    flex: 1;
+    background-color: #3b576d;
+    /*background-color: #797c7e;*/
+    background-image: url(../images/man.png);
+    background-size: 100% auto;
+    background-position: center top;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-block: 40px;
+    padding-inline: 100px;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #3b576d;
+}
